@@ -1,0 +1,25 @@
+.App {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    min-height: 120vh;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana;
+   /* background-color: #05386B;*/
+    background-color: #ffffff;
+    height: 120vh !important;
+    margin: 0;
+}
+
+root {
+    height: 120vh;
+}
+
+#title {
+    margin-top: 0;
+    padding-top: 50px;
+}

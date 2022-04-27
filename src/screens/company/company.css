@@ -1,0 +1,25 @@
+#displayCompanyField {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #EDF5E1;
+    padding: 10px;
+ 
+}
+
+#companyNameField {
+}
+
+#companyNameField p {
+
+}
+
+#displayTaskField{
+
+}
+
+#blankSpace {
+    margin-bottom: 50px;
+}

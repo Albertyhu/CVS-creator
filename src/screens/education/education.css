@@ -1,0 +1,16 @@
+#AddEducationPanel {
+    margin-bottom: 50px; 
+}
+
+#displayEducationContainer {
+    margin-bottom: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #EDF5E1;
+    padding: 10px;
+
+}
+
+

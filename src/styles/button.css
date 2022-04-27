@@ -1,0 +1,97 @@
+.toggleButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #379683;
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.toggleButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}
+
+
+.submitButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #379683;
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.submitButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}
+
+.cancelButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #EDF5E1;
+    width: 20%;
+    text-align: center;
+    color: #333333;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.cancelButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}
+
+#editingButtonContainer {
+
+}
+
+.editButton, .removeButton {
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-family: Verdana;
+    cursor: pointer;
+}
+
+.editButton {
+    background-color:#379683; 
+    color: #ffffff;
+}
+
+.editButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}
+
+.removeButton {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.removeButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}

@@ -1,0 +1,270 @@
+#backButton {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #05386B;
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backButton:active {
+    background-color: #379683;
+    transform: translate(4px, 4px)
+}
+
+#nextButton {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #8EE4AF;
+    width: 20%;
+    text-align: center;
+    color: #6c6c6c; 
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+#nextButton:active {
+    background-color: #b8b8b8;
+    transform: translate(4px, 4px)
+}
+
+#formContainer {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+    min-height: 120vh;
+    background-color: #ffffff;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+#nameField {
+    justify-content: space-between;
+}
+
+#firstName, #lastName {
+
+}
+
+#firstName {
+}
+
+#lastName {
+}
+
+#nameZone {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#firstDataField {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dataField {
+    display: flex;
+}
+
+#nameField-inner {
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #5CDB95;
+    width: 20%;
+    text-align: center;
+    color: #000000;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#submitButton:active {
+    background-color: #b6bbae;
+    transform: translate(4px, 4px)
+}
+
+#navigationContainer {
+    display: block; 
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#nextButton, #backButton {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#AddTaskButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #EDF5E1;
+    width: 20%;
+    text-align: center;
+    color: #000000;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+    #AddTaskButton:active {
+        background-color: #b6bbae;
+        transform: translate(4px, 4px)
+    }
+
+
+.taskField {
+   
+}
+
+#addTaskField {
+   display: inline-block; 
+}
+
+#submitTaskButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #05386B;
+    width: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+    #submitTaskButton:active {
+        background-color: #b6bbae;
+        transform: translate(4px, 4px)
+    }
+
+#cancelTaskButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #EDF5E1;
+    width: 10%;
+    text-align: center;
+    color: #000000;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+    #cancelTaskButton:active {
+        background-color: #b6bbae;
+        transform: translate(4px, 4px)
+    }
+
+#submitTaskButton, #cancelTaskButton {
+margin-left: 5px;
+margin-right: 5px; 
+}
+
+#removeTaskButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #EDF5E1;
+    text-align: center;
+    color: #000000;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+    #removeTaskButton:active {
+        background-color: #b6bbae;
+        transform: translate(4px, 4px)
+    }
+
+
+.taskListItem {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#taskListItem{
+    display: inline-block; 
+
+}
+
+#addCompanyButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #379683;
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+    #addCompanyButton:active {
+        background-color: #b8b8b8;
+        transform: translate(4px, 4px)
+    }
+
+#CancelCompanyButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #05386B;
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+#CancelCompanyButton:active {
+    background-color: #b6bbae;
+    transform: translate(4px, 4px)
+}
+
+#companyNameField {
+    display: block 
+}
+
+#blankSpace {
+    margin-bottom: 50px;
+}
