@@ -66,7 +66,7 @@ export const EditEducationData = props => {
                 endDate: new Date(end.replace(/-/g,'\/')),
             }
             editEducation(edited, ind)
-            toggleEdit(); 
+            toggleEdit(ind); 
         }
         else {
             alert(errorMessage)
@@ -80,8 +80,8 @@ export const EditEducationData = props => {
                     <p><b>School Name: </b> <input value={schoolName} onChange={ handleSchoolChange} /></p>
                 </div>
                 <div id="editingButtonContainer">
-                    <div class="editButton" onClick={handleSubmit}>SUBMIT</div>
-                    <div class="removeButton" onClick={() => { toggleEdit() }}>CANCEL</div>
+                    <div class="editButton" onClick={() =>handleSubmit()}>SUBMIT</div>
+                    <div class="removeButton" onClick={() => { toggleEdit(ind) }}>CANCEL</div>
                 </div>
             </div >
             <div id="dataField">

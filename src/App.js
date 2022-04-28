@@ -69,6 +69,10 @@ class App extends React.Component {
         getPractical: () => {
             return this.state.practicalExp; 
         },
+        removePractical: (ind) => {
+            var newArray = this.state.practicalExp.filter((element, index) => index !== ind)
+            this.setState({practicalExp: [...newArray]})
+        },
         editPractical: (data, ind) => {
             var edited = [...this.state.practicalExp]; 
             edited[ind].companyName = data.companyName;

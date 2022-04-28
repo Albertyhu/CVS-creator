@@ -23,3 +23,20 @@
 #blankSpace {
     margin-bottom: 50px;
 }
+
+#PE-newTaskField {
+    display: block;
+}
+
+#PE-newTaskField input, #PE-newTaskField div {
+    display: inline-block;
+}
+
+#PE-newTaskField h4 {
+    margin-bottom: 0px;
+    
+}
+
+#taskData {
+    display: block;
+}

@@ -28,7 +28,7 @@ const PracticalInfo = () => {
                 :
                 <div id='addCompanyButton' onClick={openCompanyPanel}>ADD COMPANY</div>}
             <div id = "blankSpace"></div>
-            <DisplayCompanyList />
+            <DisplayCompanyList key={genKey()}/>
             <div id="navigationContainer"> 
                 <Link to="/educationalInfo"><div id="backButton">GO BACK</div></Link>
                 <Link to="/cvs"><div id="nextButton">NEXT</div></Link>
