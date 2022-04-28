@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import Home from './screens/home.js';
 import "./styles/app.css"; 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import GeneralInfo from './screens/generalInfo.js';
 import EducationalInfo from './screens/educationalInfo.js';
 import PracticalInfo from './screens/practicalInfo.js';
@@ -91,13 +91,15 @@ class App extends React.Component {
         return (
             <div className="App">
                 <MyContext.Provider value={this.formFunctions}>
-                <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/generalInfo" element={<GeneralInfo />}></Route>
-                    <Route path="/educationalInfo" element={<EducationalInfo />}></Route>
-                    <Route path="/practicalInfo" element={<PracticalInfo />}></Route>
-                    <Route path="/cvs" element={<DisplayCVS />}></Route>
-                    </Routes>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Home />}></Route>
+                        <Route path="/generalInfo" element={<GeneralInfo />}></Route>
+                        <Route path="/educationalInfo" element={<EducationalInfo />}></Route>
+                        <Route path="/practicalInfo" element={<PracticalInfo />}></Route>
+                        <Route path="/cvs" element={<DisplayCVS />}></Route>
+                     </Routes>
+                 </BrowserRouter>
                  </MyContext.Provider>
             </div>
         )
