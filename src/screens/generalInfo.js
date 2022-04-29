@@ -84,7 +84,7 @@ const GeneralInfo = () => {
 
             </div>
             <div id = "navigationContainer"> 
-                <Link to='/'><div id="backButton">GO BACK</div></Link>
+                <Link to='/CVS-creator'><div id="backButton">GO BACK</div></Link>
                 <Link to="/educationalInfo"><div id="nextButton">NEXT</div></Link>
             </div>
             </div>

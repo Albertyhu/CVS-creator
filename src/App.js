@@ -93,7 +93,7 @@ class App extends React.Component {
                 <MyContext.Provider value={this.formFunctions}>
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/CVS-creator" element={<Home />} />
                         <Route path="/generalInfo" element={<GeneralInfo />}/>
                         <Route path="/educationalInfo" element={<EducationalInfo />}/>
                         <Route path="/practicalInfo" element={<PracticalInfo />}/>
