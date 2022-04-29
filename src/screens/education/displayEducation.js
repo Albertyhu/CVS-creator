@@ -31,7 +31,7 @@ export const DisplaySavedEducation = () => {
                 <div key={newKey} id='displayEducationContainer'>
                     < div id="firstDataField">
                         <div>
-                            <p><b>School Name: </b> {item.school}</p>
+                            <h2>School Name: {item.school}</h2>
                         </div>
                         <div id="editingButtonContainer">
                             <div class="editButton" onClick={() => { toggleRead(index) }}>EDIT</div>
