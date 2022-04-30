@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CVS-creator/static/css/main.15c036b0.css",
-    "main.js": "/CVS-creator/static/js/main.ff566be1.js",
+    "main.css": "/CVS-creator/static/css/main.d9ef143d.css",
+    "main.js": "/CVS-creator/static/js/main.fe14be1a.js",
     "index.html": "/CVS-creator/index.html",
-    "main.15c036b0.css.map": "/CVS-creator/static/css/main.15c036b0.css.map",
-    "main.ff566be1.js.map": "/CVS-creator/static/js/main.ff566be1.js.map"
+    "main.d9ef143d.css.map": "/CVS-creator/static/css/main.d9ef143d.css.map",
+    "main.fe14be1a.js.map": "/CVS-creator/static/js/main.fe14be1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.15c036b0.css",
-    "static/js/main.ff566be1.js"
+    "static/css/main.d9ef143d.css",
+    "static/js/main.fe14be1a.js"
   ]
 }
