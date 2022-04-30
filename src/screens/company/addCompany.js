@@ -6,7 +6,7 @@ import { MyContext } from '../../components/contextItem.js';
 import { genKey } from '../../components/randGen.js';
 import { FaBeer } from 'react-icons/fa';
 import { HandleDateInput } from '../../components/handleDate.js'; 
-
+import uniqid from 'uniqid'; 
 
 export const CompanyPanel = props => {
     const { addPracticalExp } = useContext(MyContext); 
@@ -46,7 +46,10 @@ export const CompanyPanel = props => {
 
     const submitTask = () => {
         if (singleTask !== '') {
-            const newTask = singleTask;
+            const newTask = {
+                task: singleTask,
+                id: uniqid(),
+            };
             setTasks(prevState => [...prevState, newTask])
             setSingleTask('')
             closeAddTaskPanel();
@@ -82,8 +85,8 @@ export const CompanyPanel = props => {
             const renderTasks = tasks.map((item, index) => {
                 count++;
                 return (
-                    <div key={genKey()}>
-                        <p className='taskListItem'>{count}.) {item}</p>
+                    <div key={item.id}>
+                        <p className='taskListItem'>{count}.) {item.task}</p>
                         <div id='removeTaskButton' onClick={() => removeTaskItem(index)}>Remove</div>
                     </div>
                 )
@@ -115,7 +118,8 @@ export const CompanyPanel = props => {
                 job: position,
                 startDate: start, 
                 endDate: end, 
-                taskList: tasks, 
+                taskList: [...tasks], 
+                id: uniqid(),
             }
        //     addCompany(newCompany); 
             addPracticalExp(newCompany); 

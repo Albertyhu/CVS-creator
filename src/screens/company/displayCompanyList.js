@@ -9,7 +9,7 @@ const displayTasks = tasks => {
     var count = 0; 
     const list = tasks.map(item => {
         count++; 
-        return (<p key={genKey()}>{ count }.) {item}</p>)
+        return (<p key={item.id}>{ count }.) {item.task}</p>)
         })
         return list;
 }
@@ -32,7 +32,7 @@ export const DisplayCompanyList = props => {
             {  getPractical().map((item, index) => {
                 const startingDate = item.startDate.toLocaleDateString()
                 const endingDate = item.endDate.toLocaleDateString()
-                return (<div key={genKey()}>{
+                return (<div key={item.id}>{
                  !readMode[index] ?
                   <div key={genKey()} id="displayCompanyField">
                         <div id="firstDataField">

@@ -26,7 +26,7 @@ export const DisplaySavedEducation = () => {
         const endingDate = item.endDate.toLocaleDateString(); 
         const newKey = genKey(); 
     
-        return (<div key={genKey()} > 
+        return (<div key={item.id} > 
             {!readModeArray[index] ?
                 <div id='displayEducationContainer'>
                     < div id="firstDataField" >

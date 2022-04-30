@@ -31,7 +31,7 @@ const EducationalInfo = () => {
                 <div className="toggleButton" onClick={openAddPanel}>ADD EDUCATION</div>
                 }
            
-            <DisplaySavedEducation />
+            <DisplaySavedEducation key={genKey()}/>
             <div id="navigationContainer"> 
                 <Link to="/generalInfo"><div id="backButton">GO BACK</div></Link>
                 <Link to="/practicalInfo"><div id="nextButton">NEXT</div></Link>

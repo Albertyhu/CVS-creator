@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { MyContext } from '../../components/contextItem.js';
 import { genKey } from '../../components/randGen.js';
-import { EditTask } from './editTask.js'; 
 import { HandleDateInput } from '../../components/handleDate.js'; 
 import "../../styles/button.css";
 import "./company.css";
+import uniqid from 'uniqid';
 
 export const EditPractical = props => {
     const { editPractical} = React.useContext(MyContext)
@@ -15,14 +15,12 @@ export const EditPractical = props => {
 
     var formattedStart = `${startDate.getFullYear()}-`
     if (parseInt(startDate.getMonth()) < 10) {
-        console.log("starting month: " + parseInt(startDate.getMonth()))
         formattedStart += '0'
     }
 
     formattedStart += `${startDate.getMonth() + 1}-`
 
     if (parseInt(startDate.getDate()) < 10) {
-        console.log("starting day: " + parseInt(startDate.getdate()))
         formattedStart += '0'
     }
     formattedStart += `${startDate.getDate()}`; 
@@ -37,8 +35,6 @@ export const EditPractical = props => {
         formattedEnd += '0'
     }
     formattedEnd += `${endDate.getDate()}`; 
-    console.log(formattedStart)
-    console.log(formattedEnd)
 
     const [start, setStartDate] = useState(formattedStart);
     const [end, setEndDate] = useState(formattedEnd); 
@@ -63,7 +59,7 @@ export const EditPractical = props => {
 
     const handleTaskChange = (event, index) => {
         var array = [...tasks]
-        array[index] = event.target.value
+        array[index].task = event.target.value
         setTasks([...array]); 
     }
 
@@ -73,7 +69,11 @@ export const EditPractical = props => {
 
     const handleSubmitNewTask = () => {
         if (newTask !== "") {
-            setTasks(prevState => [...prevState, newTask]); 
+            const newItem = {
+                task: newTask,
+                id: uniqid(), 
+            }
+            setTasks(prevState => [...prevState, newItem]); 
             setNewTask(''); 
             toggleTaskPanel(); 
         }
@@ -126,6 +126,11 @@ export const EditPractical = props => {
 
     }
 
+    const removeTask = (toDelete) => {
+        const array = tasks.filter((item, index) => index !== toDelete); 
+        setTasks([...array]); 
+    }
+
     return (
         <div>
             <div key={genKey()} id='displayCompanyField'>
@@ -158,9 +163,10 @@ export const EditPractical = props => {
                         <h3>Tasks</h3>
                         {tasks.map((val, index) => {
                             return (
-                                <div id="taskData" key={genKey()}>
+                                <div id="taskData" key={val.id}>
                                     <b>{ index+1} .) </b>
-                                    <input value={val} onChange={(event) => { handleTaskChange(event, index) }} /> 
+                                    <input value={val.task} onChange={(event) => { handleTaskChange(event, index) }} /> 
+                                    <div className="minorDarkButton" style={{display: "inline-block"}}onClick={() => { removeTask(index) }}>Remove</div>
                                 </div>
                                 )
                         })}

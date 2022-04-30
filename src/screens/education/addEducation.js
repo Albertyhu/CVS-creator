@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { MyContext } from '../../components/contextItem.js'; 
-import '../../styles/button.css'
+import '../../styles/button.css'; 
+import uniqid from 'uniqid'; 
 
 export const AddEducation = props => {
     const { getEducation, setEducation } = React.useContext(MyContext); 
@@ -56,6 +57,7 @@ export const AddEducation = props => {
                 studyTitle: study,
                 startDate: new Date(start.replace(/-/g, '\/')),
                 endDate: new Date(end.replace(/-/g, '\/')),
+                id: uniqid(), 
             }
             setEducation(data)
 
