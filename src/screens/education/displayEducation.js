@@ -26,16 +26,16 @@ export const DisplaySavedEducation = () => {
         const endingDate = item.endDate.toLocaleDateString(); 
         const newKey = genKey(); 
     
-        return (<div> 
+        return (<div key={genKey()} > 
             {!readModeArray[index] ?
-                <div key={newKey} id='displayEducationContainer'>
-                    < div id="firstDataField">
+                <div id='displayEducationContainer'>
+                    < div id="firstDataField" >
                         <div>
                             <h2>School Name: {item.school}</h2>
                         </div>
                         <div id="editingButtonContainer">
-                            <div class="editButton" onClick={() => { toggleRead(index) }}>EDIT</div>
-                            <div class="removeButton" onClick={() => { removeEducation(index)} }>REMOVE</div>
+                            <div className="editButton" onClick={() => { toggleRead(index) }}>EDIT</div>
+                            <div className="removeButton" onClick={() => { removeEducation(index)} }>REMOVE</div>
                         </div>
                     </div >
                     <div id="dataField">

@@ -134,8 +134,8 @@ export const EditPractical = props => {
                         <h2>Company:</h2><input value={companyN} onChange={handleCompanyChange} />
                     </div>
                     <div id="editingButtonContainer">
-                        <div class="editButton" onClick={() => {handleSubmit()}}>SUBMIT</div>
-                        <div class="removeButton" onClick={() => { toggleEdit(ind) }}>CANCEL</div>
+                        <div className="editButton" onClick={() => {handleSubmit()}}>SUBMIT</div>
+                        <div className="removeButton" onClick={() => { toggleEdit(ind) }}>CANCEL</div>
                     </div>
                 </div>
                 {start && end ?
@@ -173,11 +173,11 @@ export const EditPractical = props => {
                     <div id="PE-newTaskField">
                         <h4>New Task</h4>
                         <input onChange={handleAddTask} value={newTask} />
-                        <div class="minorGreenThreeButton" onClick={handleSubmitNewTask}>SUBMIT TASK</div>
-                        <div class="minorDarkButton" onClick={() => toggleTaskPanel()}>CANCEL</div>
+                        <div className="minorGreenThreeButton" onClick={handleSubmitNewTask}>SUBMIT TASK</div>
+                        <div className="minorDarkButton" onClick={() => toggleTaskPanel()}>CANCEL</div>
                     </div>
                     :
-                    <div class="minorGreenOneButton" onClick={() => toggleTaskPanel()}>ADD TASK</div>
+                    <div className="minorGreenOneButton" onClick={() => toggleTaskPanel()}>ADD TASK</div>
 
                 }
                 <div>

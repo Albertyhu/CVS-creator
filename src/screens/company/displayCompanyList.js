@@ -45,8 +45,8 @@ export const DisplayCompanyList = props => {
                                 }
                             </div>
                             <div id="editingButtonContainer">
-                                <div class="editButton" onClick={() => toggleReadMode(index)}>EDIT</div>
-                                    <div class="removeButton" onClick={() => { removePractical(index) } }>REMOVE</div>
+                                <div className="editButton" onClick={() => toggleReadMode(index)}>EDIT</div>
+                                    <div className="removeButton" onClick={() => { removePractical(index) } }>REMOVE</div>
                             </div>
                         </div>
                         <p><b>Job Title: </b> <i>{item.job}</i></p>

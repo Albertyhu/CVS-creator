@@ -28,7 +28,7 @@ const EducationalInfo = () => {
 
                 />
                 : 
-                <div class="toggleButton" onClick={openAddPanel}>ADD EDUCATION</div>
+                <div className="toggleButton" onClick={openAddPanel}>ADD EDUCATION</div>
                 }
            
             <DisplaySavedEducation />

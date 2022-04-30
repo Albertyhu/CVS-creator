@@ -89,8 +89,8 @@ export const AddEducation = props => {
                     <input type="date" onChange={handleEndChange} value={end}/>
                 </div>
             </div>
-            <div class="submitButton" onClick={() => { handleSubmit() }}>SUBMIT</div>
-            <div class="cancelButton" onClick={() => { closePanel() }}>CANCEL</div>
+            <div className="submitButton" onClick={() => { handleSubmit() }}>SUBMIT</div>
+            <div className="cancelButton" onClick={() => { closePanel() }}>CANCEL</div>
         </div>
         )
 }

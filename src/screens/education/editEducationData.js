@@ -80,8 +80,8 @@ export const EditEducationData = props => {
                     <p><b>School Name: </b> <input value={schoolName} onChange={ handleSchoolChange} /></p>
                 </div>
                 <div id="editingButtonContainer">
-                    <div class="editButton" onClick={() =>handleSubmit()}>SUBMIT</div>
-                    <div class="removeButton" onClick={() => { toggleEdit(ind) }}>CANCEL</div>
+                    <div className="editButton" onClick={() =>handleSubmit()}>SUBMIT</div>
+                    <div className="removeButton" onClick={() => { toggleEdit(ind) }}>CANCEL</div>
                 </div>
             </div >
             <div id="dataField">
